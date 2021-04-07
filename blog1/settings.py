@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 
 from pathlib import Path
+import os 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -79,8 +80,8 @@ DATABASES = {
         'NAME': 'DEMO_TEST' , # name of the created DB
         'USER': 'ramya',  # Username of your database
         'PASSWORD': '12345', # Replace it with your main password
-        'HOST': 'localhost'
-        'PORT': '5432'     
+        'HOST': 'localhost',
+        'PORT': '5432',     
 
     }
 }
@@ -110,7 +111,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'IN'
+TIME_ZONE = 'UTC'
 
 USE_I18N = True
 
