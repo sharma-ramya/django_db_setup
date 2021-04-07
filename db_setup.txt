@@ -1,0 +1,4 @@
+Host: localhost
+port: 5432
+username: ramya
+password : 12345
